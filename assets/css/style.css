@@ -1,0 +1,817 @@
+/* ========================================
+   JEWELRY SHOP
+   White + Gold Theme
+   Responsive Admin Dashboard
+======================================== */
+
+/* ========================================
+   1. CSS VARIABLES
+======================================== */
+
+:root {
+  /* Colors */
+  --primary-color: #ffffff;
+  --secondary-color: #faf9f6;
+  --gold-color: #c9a227;
+  --gold-light: #e8d7a3;
+
+  --text-color: #2b2b2b;
+  --text-muted: #777777;
+
+  --border-color: #e8e8e8;
+
+  --hover-color: #f8f3e5;
+  --active-color: #f4ecd2;
+
+  --danger-color: #dc3545;
+  --success-color: #198754;
+  --warning-color: #ffc107;
+
+  /* Layout */
+  --sidebar-width: 250px;
+  --header-height: 70px;
+
+  /* Spacing */
+  --spacing-xs: 5px;
+  --spacing-sm: 10px;
+  --spacing-md: 15px;
+  --spacing-lg: 20px;
+  --spacing-xl: 30px;
+
+  /* Border */
+  --border-radius-sm: 6px;
+  --border-radius-md: 10px;
+  --border-radius-lg: 15px;
+
+  /* Shadow */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+  /* Transition */
+  --transition: 0.3s ease;
+}
+
+:root {
+  --menu-title-size: 20px;
+  --menu-title-font: Arial, sans-serif;
+
+  --menu-text-size: 14px;
+  --menu-text-font: Arial, sans-serif;
+}
+
+.menu-title {
+  font-size: 10px;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin: 15px 10px 8px;
+  text-transform: uppercase;
+}
+
+.menu-text {
+  font-size: var(--menu-text-size);
+  font-family: var(--menu-text-font);
+}
+
+/* ========================================
+   2. RESET
+======================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+  background: var(--secondary-color);
+
+  color: var(--text-color);
+
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ========================================
+   3. LINKS
+======================================== */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ========================================
+   4. SIDEBAR
+======================================== */
+
+.sidebar {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: var(--sidebar-width);
+  height: 100vh;
+
+  background: var(--primary-color);
+
+  border-right: 1px solid var(--border-color);
+
+  z-index: 1000;
+
+  /* IMPORTANT */
+  overflow: hidden;
+}
+
+/* Sidebar Scrollbar */
+
+.sidebar-menu::-webkit-scrollbar {
+  width: 5px;
+}
+
+.sidebar-menu::-webkit-scrollbar-thumb {
+  background: var(--gold-light);
+  border-radius: 1px;
+}
+
+.sidebar-menu::-webkit-scrollbar-track {
+  background: var(--primary-color);
+}
+
+/* ========================================
+   5. SIDEBAR HEADER
+======================================== */
+
+.sidebar-header {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: var(--header-height);
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 var(--spacing-lg);
+
+  background: var(--primary-color);
+
+  border-bottom: 1px solid var(--border-color);
+
+  z-index: 10;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 22px;
+
+  color: var(--gold-color);
+
+  margin-right: var(--spacing-sm);
+}
+
+.brand-name {
+  font-size: 19px;
+
+  font-weight: 600;
+
+  color: var(--text-color);
+
+  white-space: nowrap;
+}
+
+/* ========================================
+   6. SIDEBAR MENU
+======================================== */
+
+.sidebar-menu {
+  position: absolute;
+
+  top: var(--header-height);
+  left: 0;
+
+  width: 100%;
+  height: calc(100vh - var(--header-height));
+
+  padding: var(--spacing-md) var(--spacing-sm);
+
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Menu Item */
+
+.menu-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: var(--spacing-md);
+
+  padding: 12px var(--spacing-md);
+
+  margin-bottom: var(--spacing-xs);
+
+  color: var(--text-muted);
+
+  border-radius: 1px;
+
+  transition: var(--transition);
+}
+
+/* Menu Icon */
+.menu-item span:first-child {
+  width: 25px;
+
+  text-align: center;
+
+  font-size: 17px;
+
+  flex-shrink: 0;
+}
+
+/* Menu Text */
+
+.menu-text {
+  font-size: 16px;
+
+  white-space: nowrap;
+}
+
+/* Hover */
+
+.menu-item:hover {
+  background: var(--hover-color);
+
+  color: var(--gold-color);
+
+  transform: translateX(3px);
+}
+
+/* Active */
+
+.menu-item.active {
+  background: var(--active-color);
+
+  color: var(--gold-color);
+
+  font-weight: 600;
+}
+
+.menu-item.active i {
+  color: var(--gold-color);
+}
+
+/* ========================================
+   7. TOP HEADER
+======================================== */
+
+.top-header {
+  box-shadow: var(--shadow-sm);
+  position: fixed;
+
+  top: 0;
+
+  left: var(--sidebar-width);
+
+  right: 0;
+
+  height: var(--header-height);
+
+  background: var(--primary-color);
+
+  border-bottom: 1px solid var(--border-color);
+
+  display: flex;
+
+  align-items: center;
+
+  padding: 0 var(--spacing-xl);
+
+  z-index: 900;
+
+  box-shadow: var(--shadow-sm);
+}
+
+.top-header h2 {
+  font-size: 30px;
+
+  font-weight: 600;
+
+  color: var(--text-color);
+}
+
+/* ========================================
+   8. HAMBURGER BUTTON
+======================================== */
+
+.menu-btn {
+  display: none;
+
+  border: none;
+
+  background: transparent;
+
+  color: var(--text-color);
+
+  font-size: 24px;
+
+  cursor: pointer;
+
+  margin-right: var(--spacing-md);
+
+  padding: 5px;
+}
+
+/* ========================================
+   9. HEADER RIGHT
+======================================== */
+
+.header-right {
+  margin-left: auto;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: var(--spacing-lg);
+}
+
+.header-right span,
+.header-right .header-profile-link {
+  display: inline-flex;
+  align-items: center;
+
+  cursor: pointer;
+
+  font-size: 19px;
+
+  color: var(--text-muted);
+
+  transition: var(--transition);
+}
+
+.header-right span:hover,
+.header-right .header-profile-link:hover,
+.header-right .header-profile-link:focus-visible {
+  color: var(--gold-color);
+}
+
+/* ========================================
+   10. MAIN CONTENT
+======================================== */
+
+.main-content {
+  flex: 1 0 auto;
+  margin-left: var(--sidebar-width);
+
+  padding: calc(var(--header-height) + var(--spacing-xl)) var(--spacing-xl)
+    var(--spacing-xl);
+
+  min-height: 0;
+
+  background: var(--secondary-color);
+}
+
+/* ========================================
+   11. PAGE TITLE
+======================================== */
+
+.page-title {
+  margin-bottom: var(--spacing-xl);
+}
+
+.page-title h1 {
+  font-size: 28px;
+
+  color: var(--text-color);
+
+  margin-bottom: var(--spacing-xs);
+}
+
+.page-title p {
+  color: var(--text-muted);
+
+  font-size: 14px;
+}
+
+/* ========================================
+   12. CARDS
+======================================== */
+
+.card {
+  background: var(--primary-color);
+
+  border: 1px solid var(--border-color);
+
+  border-radius: var(--border-radius-lg);
+
+  padding: var(--spacing-xl);
+
+  box-shadow: var(--shadow-sm);
+
+  transition: var(--transition);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+/* ========================================
+   13. DASHBOARD CARDS
+======================================== */
+
+.dashboard-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2fr 1fr);
+  gap: 24px;
+  margin-bottom: 25px;
+}
+
+.dashboard-card {
+  width: 100%;
+  background: var(--primary-color);
+
+  border: 1px solid var(--border-color);
+
+  border-radius: var(--border-radius-md);
+
+  padding: var(--spacing-lg);
+
+  box-shadow: var(--shadow-sm);
+
+  transition: var(--transition);
+}
+
+.dashboard-card:hover {
+  transform: translateY(-3px);
+
+  box-shadow: var(--shadow-md);
+}
+
+.dashboard-card h3 {
+  font-size: 14px;
+
+  color: var(--text-muted);
+
+  margin-bottom: var(--spacing-sm);
+}
+
+.dashboard-card .number {
+  font-size: 28px;
+
+  font-weight: 600;
+
+  color: var(--gold-color);
+}
+
+/* ========================================
+   14. BUTTONS
+======================================== */
+
+.btn {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: var(--spacing-sm);
+
+  padding: 10px 18px;
+
+  border: none;
+
+  border-radius: var(--border-radius-sm);
+
+  cursor: pointer;
+
+  font-size: 14px;
+
+  transition: var(--transition);
+}
+
+/* Gold Button */
+
+.btn-gold {
+  background: var(--gold-color);
+
+  color: var(--primary-color);
+}
+
+.btn-gold:hover {
+  background: #b18d1d;
+}
+
+/* Normal Button */
+
+.btn-light {
+  background: var(--primary-color);
+
+  color: var(--text-color);
+
+  border: 1px solid var(--border-color);
+}
+
+.btn-light:hover {
+  background: var(--hover-color);
+}
+
+/* ========================================
+   15. FORM
+======================================== */
+
+.form-group {
+  margin-bottom: var(--spacing-lg);
+}
+
+.form-group label {
+  display: block;
+
+  margin-bottom: var(--spacing-xs);
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  color: var(--text-color);
+}
+
+.form-control {
+  width: 100%;
+
+  padding: 11px 13px;
+
+  border: 1px solid var(--border-color);
+
+  border-radius: var(--border-radius-sm);
+
+  background: var(--primary-color);
+
+  color: var(--text-color);
+
+  outline: none;
+
+  transition: var(--transition);
+}
+
+.form-control:focus {
+  border-color: var(--gold-color);
+
+  box-shadow: 0 0 0 2px rgba(201, 162, 39, 0.12);
+}
+
+/* ========================================
+   16. TABLE
+======================================== */
+
+.table-container {
+  width: 100%;
+
+  overflow-x: auto;
+
+  background: var(--primary-color);
+
+  border: 1px solid var(--border-color);
+
+  border-radius: var(--border-radius-md);
+
+  box-shadow: var(--shadow-sm);
+}
+
+table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  min-width: 700px;
+}
+
+thead {
+  background: var(--hover-color);
+}
+
+th {
+  padding: 14px;
+
+  text-align: left;
+
+  font-size: 14px;
+
+  color: var(--text-color);
+
+  border-bottom: 1px solid var(--border-color);
+}
+
+td {
+  padding: 13px 14px;
+
+  font-size: 14px;
+
+  border-bottom: 1px solid var(--border-color);
+
+  color: var(--text-muted);
+}
+
+tbody tr:hover {
+  background: #fffdf7;
+}
+
+/* ========================================
+   17. STATUS
+======================================== */
+
+.status {
+  display: inline-block;
+
+  padding: 4px 10px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+.status-success {
+  background: #e8f7ee;
+
+  color: var(--success-color);
+}
+
+.status-warning {
+  background: #fff6d8;
+
+  color: #997404;
+}
+
+.status-danger {
+  background: #fdeaea;
+
+  color: var(--danger-color);
+}
+
+/* ========================================
+   18. FOOTER
+======================================== */
+
+.footer {
+  display: flex;
+  min-height: 61px;
+  align-items: center;
+  justify-content: center;
+  margin-left: var(--sidebar-width);
+  padding: var(--spacing-lg);
+  border-top: 1px solid var(--border-color);
+  background: var(--primary-color);
+  color: var(--text-muted);
+  font-size: 13px;
+  text-align: center;
+}
+
+/* ========================================
+   19. OVERLAY
+======================================== */
+
+.sidebar-overlay {
+  display: none;
+
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.35);
+
+  z-index: 999;
+}
+
+/* ========================================
+   20. TABLET
+======================================== */
+
+@media (max-width: 1024px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ========================================
+   21. MOBILE
+======================================== */
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    z-index: 9999;
+    transition: left 0.3s ease;
+  }
+
+  .sidebar.active {
+    left: 0 !important;
+  }
+
+  .top-header {
+    left: 0;
+    z-index: 1000;
+  }
+
+  .menu-btn {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+
+  .footer {
+    margin-left: 0;
+  }
+
+  .sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9998;
+    display: none;
+  }
+
+  .sidebar-overlay.active {
+    display: block;
+  }
+}
+
+/* ========================================
+   22. SMALL MOBILE
+======================================== */
+
+@media (max-width: 480px) {
+  .top-header h2 {
+    font-size: 17px;
+  }
+
+  .header-right {
+    gap: var(--spacing-sm);
+  }
+
+  .header-right span,
+  .header-right .header-profile-link {
+    font-size: 17px;
+  }
+
+  .main-content {
+    padding-left: var(--spacing-md);
+
+    padding-right: var(--spacing-md);
+  }
+
+  .footer {
+    padding-right: var(--spacing-md);
+    padding-left: var(--spacing-md);
+  }
+
+  .footer-description {
+    max-width: 34ch;
+    line-height: 1.5;
+  }
+
+  .card {
+    padding: var(--spacing-lg);
+  }
+
+  .btn {
+    width: 100%;
+  }
+}

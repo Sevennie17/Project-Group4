@@ -1,0 +1,501 @@
+
+/* ==========================================
+   PAGE
+========================================== */
+
+.supplier-page {
+    width: 100%;
+    min-height: calc(100vh - 80px);
+
+    padding: 0 0 50px;
+
+    box-sizing: border-box;
+}
+
+
+/* ==========================================
+   PAGE TITLE
+========================================== */
+
+.page-title {
+    margin-bottom: 10px;
+}
+
+.page-title h1 {
+    margin: 0;
+
+    color: #858a9a;
+
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+
+/* ==========================================
+   SUPPLIER CARD
+========================================== */
+
+.supplier-card {
+    width: 100%;
+    min-height: 367px;
+
+    background: #fff;
+    border: 1px rgba(0,0,0,0.1);
+    border-radius: 6px;
+    padding: 20px 10px;
+
+    box-sizing: border-box;
+}
+
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.supplier-header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+  
+    padding: 0 8px 20px;
+}
+
+
+.supplier-header h2 {
+
+    color: #020202;
+
+    font-size: 25px;
+    font-weight: 500;
+}
+
+
+
+.supplier-header h2 span {
+    color: #ffd500;
+}
+
+
+.supplier-header p {
+    margin: 0;
+
+    color: #484545;
+
+    font-size: 12px;
+}
+
+
+
+/* ==========================================
+   ADD BUTTON
+========================================== */
+
+.add-btn {
+    border: none;
+
+    border-radius: 4px;
+
+    background: #eab51a;
+
+    color: #ffffff;
+
+    font-size: 10px;
+
+    padding: 10px 15px;
+
+    cursor: pointer;
+}
+
+
+.add-btn:hover {
+    background: #eab51a;
+}
+
+
+
+/* ==========================================
+   TABLE WRAPPER
+========================================== */
+
+.supplier-table-wrapper {
+    width: 100%;
+
+    border-radius: 17px;
+    border: 1px solid rgb(0, 0, 0,0.1);
+    overflow: hidden;
+
+    padding-bottom: 8px;
+
+    box-sizing: border-box;
+}
+
+
+.table-title {
+    color: #f09d02;
+
+    font-size: 18px;
+
+    padding: 12px 10px 9px;
+
+    border-bottom: 1px solid rgba(255,255,255,0.25);
+}
+
+
+
+/* ==========================================
+   TABLE
+========================================== */
+
+.supplier-table {
+    width: 100%;
+ 
+    border-collapse: collapse;
+
+    table-layout: auto;
+
+    background: transparent;
+}
+
+
+.supplier-table th {
+    color: #050505;
+    text-align:center;
+    font-size: 16px;
+
+    font-weight: 500;
+
+    text-align: left;
+
+    padding: 9px 15px 7px;
+
+    background: transparent;
+}
+
+
+.supplier-table td {
+    color: #000000;
+
+    font-size: 16px;
+
+    padding: 8px 15px;
+
+    white-space: nowrap;
+
+    background: transparent;
+}
+
+
+.supplier-table tbody tr {
+    border-top: 1px solid rgba(255,255,255,0.10);
+
+    background: transparent;
+}
+
+
+/* ==========================================
+   NO TABLE HOVER
+========================================== */
+
+.supplier-table tbody tr:hover {
+    background: transparent;
+}
+
+.supplier-table tbody tr:hover td {
+    background: transparent;
+}
+
+.supplier-table tbody td:hover {
+    background: transparent;
+}
+
+
+
+/* ==========================================
+   ACTIONS
+========================================== */
+
+.actions {
+    white-space: nowrap;
+}
+
+
+
+/* ==========================================
+   EDIT
+========================================== */
+
+.edit-btn {
+    border: none;
+
+    border-radius: 4px;
+
+    background: #eab51a;
+
+    color: #ffffff;
+
+    font-size: 6px;
+
+    padding: 8px 10px;
+
+    cursor: pointer;
+}
+
+
+.edit-btn:hover {
+    background: #eab51a;
+}
+
+
+
+/* ==========================================
+   DELETE
+========================================== */
+
+.delete-btn {
+    border: none;
+
+    border-radius: 4px;
+
+    background: #e52d35;
+
+    color: #ffffff;
+
+    font-size: 6px;
+
+    padding: 8px 10px;
+
+    margin-left: 3px;
+
+    cursor: pointer;
+}
+
+
+.delete-btn:hover {
+    background: #e52d35;
+}
+
+
+
+/* ==========================================
+   MODAL OVERLAY
+========================================== */
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    z-index: 9999;
+
+    background: rgba(0,0,0,0);
+}
+
+
+.modal-overlay.active {
+    display: flex;
+}
+
+
+
+/* ==========================================
+   MODAL
+========================================== */
+
+.supplier-modal {
+    position: relative;
+
+    width: 350px;
+
+    background: #eab51a;
+
+    border-radius: 5px;
+
+    padding: 50px 25px 15px;
+
+    box-sizing: border-box;
+}
+
+
+
+/* ==========================================
+   CLOSE
+========================================== */
+
+.close-modal {
+    position: absolute;
+
+    top: 8px;
+    right: 24px;
+
+    width: 20px;
+    height: 20px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #000000;
+
+    font-size: 24px;
+
+    font-weight: 300;
+
+    line-height: 20px;
+
+    padding: 0;
+
+    cursor: pointer;
+}
+
+
+
+/* ==========================================
+   FORM
+========================================== */
+
+.supplier-modal form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+
+
+/* ==========================================
+   INPUTS
+========================================== */
+
+.supplier-modal input {
+    width: 100%;
+    height: 25px;
+
+    border: none;
+    outline: none;
+
+    border-radius: 4px;
+
+    box-sizing: border-box;
+
+    padding: 0 8px;
+
+    /* background: #191b30; */
+
+    color: #665959;
+
+    font-size: 12px;
+}
+
+
+.supplier-modal input::placeholder {
+    color: #9b9ba3;
+}
+
+
+.supplier-modal input:focus {
+    outline: none;
+
+    box-shadow: none;
+}
+
+
+
+/* ==========================================
+   MODAL ACTIONS
+========================================== */
+
+.modal-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    margin-top: 0;
+}
+
+
+
+/* ==========================================
+   CANCEL
+========================================== */
+
+.cancel-btn {
+    width: 53px;
+    height: 22px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background: #ffffff;
+
+    color: #111111;
+
+    font-size: 7px;
+
+    cursor: pointer;
+}
+
+
+.cancel-btn:hover {
+    background: #ffffff;
+}
+
+
+
+/* ==========================================
+   SAVE
+========================================== */
+
+.save-btn {
+    width: 53px;
+    height: 22px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background: #292cff;
+
+    color: #ffffff;
+
+    font-size: 7px;
+
+    cursor: pointer;
+}
+
+
+.save-btn:hover {
+    background: #292cff;
+}
+
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 768px) {
+
+    .supplier-card {
+        overflow-x: auto;
+    }
+
+    .supplier-table-wrapper {
+        min-width: 850px;
+    }
+
+    .supplier-modal {
+        width: 280px;
+    }
+
+}

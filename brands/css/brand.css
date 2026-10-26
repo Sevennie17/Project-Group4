@@ -1,0 +1,1000 @@
+/* ==========================================
+   RESET
+========================================== */
+
+.brands-page *,
+.brands-page *::before,
+.brands-page *::after {
+    box-sizing: border-box;
+}
+
+
+/* ==========================================
+   BODY
+========================================== */
+
+body {
+    min-height: 100vh;
+
+    background: #f8f7f4;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: #111111;
+}
+
+
+/* ==========================================
+   BRANDS PAGE
+========================================== */
+
+.brands-page {
+    width: 100%;
+
+    min-height: calc(100vh - 80px);
+
+    padding: 0 0 50px;
+
+    box-sizing: border-box;
+}
+
+
+/* ==========================================
+   PAGE TITLE
+========================================== */
+
+.brands-page .page-title {
+    margin-bottom: 10px;
+}
+
+
+.brands-page .page-title h1 {
+    margin: 0;
+
+    color: #858a9a;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    line-height: 1.3;
+}
+
+
+/* ==========================================
+   BRANDS CONTAINER
+========================================== */
+
+.brands-container {
+    width: 100%;
+
+    max-width: none;
+
+    min-height: 367px;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(0, 0, 0, 0.10);
+
+    border-radius: 6px;
+
+    padding: 20px 10px;
+
+    box-sizing: border-box;
+}
+
+
+/* ==========================================
+   BRANDS HEADER
+========================================== */
+
+.brands-header {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    gap: 20px;
+
+    padding: 0 8px 20px;
+}
+
+
+.brands-header > div {
+    flex: 1;
+}
+
+
+.brands-header h2 {
+    margin: 0;
+
+    color: #020202;
+
+    font-size: 25px;
+
+    font-weight: 500;
+
+    line-height: 1.3;
+}
+
+
+.brands-header h2 span {
+    color: #ffd500;
+}
+
+
+.brands-header p {
+    margin: 5px 0 0;
+
+    color: #484545;
+
+    font-size: 12px;
+
+    line-height: 1.4;
+}
+
+
+/* ==========================================
+   ADD BRAND BUTTON
+========================================== */
+
+.add-brand-btn {
+    border: none;
+
+    outline: none;
+
+    border-radius: 4px;
+
+    background: #eab51a;
+
+    color: #ffffff;
+
+    font-size: 10px;
+
+    font-weight: 500;
+
+    padding: 10px 15px;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+
+    flex-shrink: 0;
+}
+
+
+.add-brand-btn:hover {
+    background: #eab51a;
+}
+
+
+.add-brand-btn:active {
+    transform: translateY(1px);
+}
+
+
+/* ==========================================
+   TABLE CARD
+========================================== */
+
+.table-card {
+    width: 100%;
+
+    border-radius: 8px;
+
+    border: 1px solid rgba(0, 0, 0, 0.10);
+
+    overflow: hidden;
+
+    padding-bottom: 8px;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+}
+
+
+/* ==========================================
+   TABLE TITLE
+========================================== */
+
+.table-title {
+    color: #f09d02;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    line-height: 1.3;
+
+    padding: 12px 10px 9px;
+
+    margin: 0;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+
+    background: #ffffff;
+}
+
+
+/* ==========================================
+   TABLE WRAPPER
+========================================== */
+
+.brands-table-wrapper {
+    width: 100%;
+
+    overflow-x: auto;
+
+    overflow-y: hidden;
+}
+
+
+/* ==========================================
+   TABLE
+========================================== */
+
+.brands-table {
+    text-align:center;
+    width: 100%;
+
+    border-collapse: collapse;
+
+    border-spacing: 0;
+
+    table-layout: fixed;
+
+    background: transparent;
+}
+
+
+/* ==========================================
+   TABLE HEADER
+========================================== */
+
+.brands-table thead th {
+    color: #050505;
+    text-align:center;
+    font-size: 12px;
+
+    font-weight: 500;
+
+    text-align: left;
+
+    padding: 12px 15px;
+
+    background: transparent;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+
+    white-space: nowrap;
+}
+
+
+/* ==========================================
+   COLUMN WIDTHS
+========================================== */
+
+.brands-table th:nth-child(1),
+.brands-table td:nth-child(1) {
+    width: 20%;
+}
+
+
+.brands-table th:nth-child(2),
+.brands-table td:nth-child(2) {
+    width: 18%;
+}
+
+
+.brands-table th:nth-child(3),
+.brands-table td:nth-child(3) {
+    width: 27%;
+}
+
+
+.brands-table th:nth-child(4),
+.brands-table td:nth-child(4) {
+    width: 15%;
+}
+
+
+.brands-table th:nth-child(5),
+.brands-table td:nth-child(5) {
+    width: 20%;
+}
+
+
+/* ==========================================
+   TABLE BODY
+========================================== */
+
+.brands-table tbody td {
+    color: #000000;
+text-align:center;
+    font-size: 11px;
+
+    font-weight: 400;
+
+    text-align: left;
+
+    padding: 13px 15px;
+
+    vertical-align: middle;
+
+    background: transparent;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+
+    white-space: nowrap;
+}
+
+
+/* ==========================================
+   LAST ROW
+========================================== */
+
+.brands-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* ==========================================
+   TABLE ROW
+========================================== */
+
+.brands-table tbody tr {
+    background: transparent !important;
+}
+
+
+/* ==========================================
+   REMOVE HOVER
+========================================== */
+
+.brands-table tbody tr:hover {
+    background: transparent !important;
+}
+
+
+.brands-table tbody tr:hover td {
+    background: transparent !important;
+
+    color: #000000 !important;
+}
+
+
+.brands-table tbody td:hover {
+    background: transparent !important;
+}
+
+
+/* ==========================================
+   WEBSITE
+========================================== */
+
+.brands-table .website-link {
+    /* color: #292cff; */
+
+    text-decoration: none;
+}
+
+
+.brands-table .website-link:hover {
+    /* color: #292cff; */
+
+    text-decoration: none;
+}
+
+
+/* ==========================================
+   ACTION BUTTONS
+========================================== */
+
+.action-buttons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 4px;
+
+    white-space: nowrap;
+}
+
+
+/* ==========================================
+   EDIT BUTTON
+========================================== */
+
+.btn-edit {
+    border: none;
+
+    outline: none;
+
+    border-radius: 4px;
+
+    background: #eab51a;
+
+    color: #ffffff;
+
+    font-size: 10px;
+
+    padding: 7px 10px;
+
+    min-width: 55px;
+
+    cursor: pointer;
+}
+
+
+.btn-edit:hover {
+    background: #eab51a;
+}
+
+
+.btn-edit:active {
+    transform: translateY(1px);
+}
+
+
+/* ==========================================
+   DELETE BUTTON
+========================================== */
+
+.btn-delete {
+    border: none;
+
+    outline: none;
+
+    border-radius: 4px;
+
+    background: #e52d35;
+
+    color: #ffffff;
+
+    font-size: 10px;
+
+    padding: 7px 10px;
+
+    min-width: 60px;
+
+    margin-left: 4px;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    display: inline-block;
+}
+
+
+.btn-delete:hover {
+    background: #e52d35;
+
+    color: #ffffff;
+}
+
+
+.btn-delete:active {
+    transform: translateY(1px);
+}
+
+
+/* ==========================================
+   MODAL OVERLAY
+========================================== */
+
+.brand-modal-overlay {
+    position: fixed;
+
+    inset: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    z-index: 9999;
+
+    background: rgba(0, 0, 0, 0.35);
+}
+
+
+.brand-modal-overlay.hidden {
+    display: none;
+}
+
+
+/* ==========================================
+   MODAL
+========================================== */
+
+.brand-modal {
+    position: relative;
+
+    width: 350px;
+
+    max-width: calc(100% - 30px);
+
+    background: #eab51a;
+
+    border-radius: 6px;
+
+    padding: 50px 25px 18px;
+
+    box-sizing: border-box;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.20);
+
+    animation: brandModalShow 0.15s ease;
+}
+
+
+/* ==========================================
+   MODAL ANIMATION
+========================================== */
+
+@keyframes brandModalShow {
+
+    from {
+        opacity: 0;
+
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: scale(1);
+    }
+
+}
+
+
+/* ==========================================
+   CLOSE BUTTON
+========================================== */
+
+.modal-close {
+    position: absolute;
+
+    top: 8px;
+
+    right: 22px;
+
+    width: 25px;
+
+    height: 25px;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #000000;
+
+    font-size: 25px;
+
+    font-weight: 300;
+
+    line-height: 25px;
+
+    padding: 0;
+
+    cursor: pointer;
+}
+
+
+.modal-close:hover {
+    color: #000000;
+}
+
+
+/* ==========================================
+   BRAND FORM
+========================================== */
+
+.brand-form {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 16px;
+}
+
+
+/* ==========================================
+   INPUT
+========================================== */
+
+.brand-form input {
+    width: 100%;
+
+    height: 35px;
+
+    border: none;
+
+    outline: none;
+
+    border-radius: 5px;
+
+    background: #ffffff;
+
+    color: #555555;
+
+    font-size: 10px;
+
+    padding: 0 10px;
+
+    box-sizing: border-box;
+}
+
+
+.brand-form input::placeholder {
+    color: #999999;
+
+    opacity: 1;
+}
+
+
+.brand-form input:focus {
+    outline: none;
+
+    box-shadow:
+        0 0 0 2px rgba(41, 44, 255, 0.15);
+}
+
+
+/* ==========================================
+   MODAL ACTIONS
+========================================== */
+
+.modal-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    margin-top: 2px;
+}
+
+
+/* ==========================================
+   CANCEL
+========================================== */
+
+.cancel-btn {
+    width: 65px;
+
+    height: 28px;
+
+    border: none;
+
+    outline: none;
+
+    border-radius: 5px;
+
+    background: #ffffff;
+
+    color: #111111;
+
+    font-size: 10px;
+
+    cursor: pointer;
+}
+
+
+.cancel-btn:hover {
+    background: #ffffff;
+}
+
+
+.cancel-btn:active {
+    transform: translateY(1px);
+}
+
+
+/* ==========================================
+   SAVE
+========================================== */
+
+.save-btn {
+    width: 65px;
+
+    height: 28px;
+
+    border: none;
+
+    outline: none;
+
+    border-radius: 5px;
+
+    background: #292cff;
+
+    color: #ffffff;
+
+    font-size: 10px;
+
+    cursor: pointer;
+}
+
+
+.save-btn:hover {
+    background: #292cff;
+}
+
+
+.save-btn:active {
+    transform: translateY(1px);
+}
+
+
+/* ==========================================
+   LARGE DESKTOP
+========================================== */
+
+@media (min-width: 1400px) {
+
+    .brands-container {
+        min-height: 400px;
+
+        padding: 22px 12px;
+    }
+
+
+    .brands-header {
+        padding: 0 10px 22px;
+    }
+
+
+    .brands-header h2 {
+        font-size: 25px;
+    }
+
+
+    .brands-header p {
+        font-size: 12px;
+    }
+
+
+    .brands-table thead th {
+        font-size: 13px;
+
+        padding: 14px 17px;
+    }
+
+
+    .brands-table tbody td {
+        font-size: 12px;
+
+        padding: 14px 17px;
+    }
+
+
+    .btn-edit,
+    .btn-delete {
+        font-size: 10px;
+
+        padding: 8px 12px;
+    }
+
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 768px) {
+
+    .brands-container {
+        overflow: hidden;
+
+        padding: 18px 10px;
+    }
+
+
+    .brands-header {
+        gap: 15px;
+    }
+
+
+    .brands-header h2 {
+        font-size: 20px;
+    }
+
+
+    .brands-header p {
+        font-size: 10px;
+    }
+
+
+    .add-brand-btn {
+        font-size: 10px;
+
+        padding: 9px 12px;
+    }
+
+
+    .brands-table-wrapper {
+        overflow-x: auto;
+    }
+
+
+    .brands-table {
+        min-width: 850px;
+    }
+
+
+    .brands-table thead th {
+        font-size: 10px;
+
+        padding: 11px 10px;
+    }
+
+
+    .brands-table tbody td {
+        font-size: 10px;
+
+        padding: 11px 10px;
+    }
+
+
+    .brand-modal {
+        width: 320px;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 600px) {
+
+    .brands-page {
+        padding-bottom: 30px;
+    }
+
+
+    .brands-container {
+        padding: 15px 8px;
+    }
+
+
+    .brands-header {
+        align-items: flex-start;
+
+        gap: 12px;
+
+        padding: 0 5px 17px;
+    }
+
+
+    .brands-header h2 {
+        font-size: 17px;
+    }
+
+
+    .brands-header p {
+        font-size: 10px;
+    }
+
+
+    .add-brand-btn {
+        font-size: 10px;
+
+        padding: 8px 10px;
+    }
+
+
+    .table-card {
+        border-radius: 8px;
+    }
+
+
+    .table-title {
+        font-size: 15px;
+
+        padding: 11px 10px 9px;
+    }
+
+
+    .brands-table {
+        min-width: 800px;
+    }
+
+
+    .brands-table thead th {
+        font-size: 10px;
+
+        padding: 10px 8px;
+    }
+
+
+    .brands-table tbody td {
+        font-size: 10px;
+
+        padding: 10px 8px;
+    }
+
+
+    .btn-edit,
+    .btn-delete {
+        font-size: 10px;
+
+        padding: 6px 8px;
+    }
+
+
+    .brand-modal {
+        width: calc(100% - 30px);
+
+        padding: 45px 20px 18px;
+    }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 450px) {
+
+    .brands-container {
+        padding: 13px 7px;
+    }
+
+
+    .brands-header {
+        gap: 8px;
+    }
+
+
+    .brands-header h2 {
+        font-size: 16px;
+    }
+
+
+    .brands-header p {
+        font-size: 10px;
+    }
+
+
+    .add-brand-btn {
+        font-size: 10px;
+
+        padding: 7px 8px;
+    }
+
+
+    .brands-table {
+        min-width: 760px;
+    }
+
+
+    .brands-table thead th {
+        font-size: 10px;
+
+        padding: 9px 7px;
+    }
+
+
+    .brands-table tbody td {
+        font-size: 10px;
+
+        padding: 9px 7px;
+    }
+
+}

@@ -1,0 +1,17 @@
+======================Git TO GITHUB==========================
+
+git status
+git add .  ដើម្បី git file
+git commit -m "add style for login" ដើម្បីប្រាប់ថាយើង Git ត្រង់ចំណុចណា?
+git push origin main   ដើម្បី Postទៅលើ Github របស់ក្រុមយើង
+git push origin Login_feature ដើម្បី Postទៅលើ Github របស់ក្រុមយើងត្រង់ Branch Login_feature
+
+
+git push -u origin Login_Feature //ករណីធ្វើ Branch ដំបូង
+git checkout -b Login_feature // to show you've made in github show in vs
+git checkout //to change branch
+git fetch //to show branch you've made in github
+
+after test barnch brand_supplierManage
+ 
+ git checkout report_setting_profile  //to cahnge branch
