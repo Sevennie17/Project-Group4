@@ -6,7 +6,7 @@
 
     <!-- Total Products -->
     <a
-        href="/Jewelry_Shop/products/index.php"
+        href="/Jewelry-app/products/index.php"
         class="stat-card">
         <div class="stat-icon">
             <span>
@@ -24,7 +24,7 @@
 
     <!-- Available Inventory -->
     <a
-        href="/Jewelry_Shop/inventory/index.php"
+        href="/Jewelry-app/inventory/index.php"
         class="stat-card">
         <div class="stat-icon">
             <span>
@@ -42,7 +42,7 @@
 
     <!-- Low Stock Alert -->
     <a
-        href="/Jewelry_Shop/inventory/index.php"
+        href="/Jewelry-app/inventory/index.php"
         class="stat-card">
         <div class="stat-icon">
             <span>
@@ -60,7 +60,7 @@
 
     <!-- Today's Sales -->
     <a
-        href="/Jewelry_Shop/sales/"
+        href="/Jewelry-app/sales/"
         class="stat-card">
         <div class="stat-icon">
             <span>
@@ -78,7 +78,7 @@
 
     <!-- Monthly Revenue -->
     <a
-        href="/Jewelry_Shop/reports/"
+        href="/Jewelry-app/reports/"
         class="stat-card">
         <div class="stat-icon">
             <span>
@@ -96,7 +96,7 @@
 
     <!-- Pending Custom Orders -->
     <a
-        href="/Jewelry_Shop/custom-orders/index.php"
+        href="/Jewelry-app/custom-orders/index.php"
         class="stat-card">
         <div class="stat-icon">
             <span>
@@ -114,7 +114,7 @@
 
     <!-- Active Repair Orders -->
     <a
-        href="/Jewelry_Shop/custom-orders/index.php"
+        href="/Jewelry-app/custom-orders/index.php"
         class="stat-card">
         <div class="stat-icon">
             <span>
@@ -132,7 +132,7 @@
 
     <!-- Total Customers -->
     <a
-        href="/Jewelry_Shop/customer/index.php"
+        href="/Jewelry-app/customer/index.php"
         class="stat-card">
         <div class="stat-icon">
             <span>
@@ -146,5 +146,4 @@
             <small>Registered customers</small>
         </div>
     </a>
-
 </div>
